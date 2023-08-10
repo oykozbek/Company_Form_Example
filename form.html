@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>X-Company Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">X-Company Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" method="post" action="https://survey-form.freecodecamp.org">
+    <fieldset>
+      <label id="name-label">Name <input id="name" type="text" name="name" placeholder="Enter your name" required /></label>
+      <label id="email-label">Email <input id="email" type="email" name="email" placeholder="Enter your Email" required /></label>
+      <label id="number-label">Age <input id="number" type="number" name="number" min="13" max="120" placeholder="Age" /></label>
+      <label for="dropdown">Which option best describes your current role?
+      <select id="dropdown" name="dropdown">
+        <option value="">Select current role</option>
+        <option value="1">Student</option>
+        <option value="2">Full Time Job</option>
+        <option value="3">Full Time Learner</option>
+        <option value="4">Prefer not to say</option>
+        <option value="5">Other</option>
+      </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label>Would you recommend X-Company to a friend?
+        <label for="definitely-label"> <input id="definitely-label" type="radio" class="inline" value="attribute" name="attribute" checked />Definitely</label>
+        <label><input id="maybe-label" type="radio" class="inline" value="attribute" name="attribute" />Maybe </label>
+        <label><input id="not-sure-label" type="radio" class="inline" value="attribute" name="attribute" />Not sure </label>
+    
+    </fieldset>
+    <fieldset>
+      <label for="dropdown-two">What is your favorite feature of X-Company?
+        <select id="dropdown-two" name="dropdown-two">
+          <option value="">Select an option</option>
+          <option value="1">Challenges</option>
+          <option value="2">Projects</option>
+          <option value="3">Community</option>
+          <option value="4">Open Source</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="improve-label">What would you like to see improved?<small>(Check all that apply)</small>
+        <label><input type="checkbox" 
+class="inline" value="front-end-projects" /> Front-end Projects</label>
+        <label><input type="checkbox" class="inline" value="back-end-projects" /> Back-end Projects</label>
+        <label><input type="checkbox" class="inline" value="data-visualization" /> Data Visualization</label>
+        <label><input type="checkbox" class="inline" value="challenges" /> Challenges</label>
+        <label><input type="checkbox" class="inline" value="open-source" /> Open Source Community</label>
+        <label><input type="checkbox" class="inline" value="gitter-help-rooms" /> Gitter help rooms</label>
+        <label><input type="checkbox" class="inline" value="videos" /> Videos</label>
+        <label><input type="checkbox" class="inline" value="city-meetups" /> City Meetups</label>
+        <label><input type="checkbox" class="inline" value="wiki" /> Wiki</label>
+        <label><input type="checkbox" class="inline" value="forum" /> Forum</label>
+        <label><input type="checkbox" class="inline" value="additional-courses" /> Additional Courses</label>
+      </label> 
+    </fieldset>
+    <fieldset>
+      <label for="suggestion">Any comments or suggestions?
+        <textarea id="suggestion" name="suggestion" rows="5" cols="50" placeholder="Enter your comment here"></textarea>
+      </label>
+    </fieldset>
+    <fieldset>
+    <input class="button" id="submit" type="submit" value="Submit">
+    </fieldset>
+
+   </form>
+  </body>
+
+
+
+
+</html>
